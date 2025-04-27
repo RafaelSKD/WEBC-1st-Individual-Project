@@ -1,10 +1,12 @@
 .custom-footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center; /* <-- Centraliza horizontalmente */
+    text-align: center;   /* <-- Garante que o texto fique alinhado */
     padding: 20px;
     background-color: rgba(0, 0, 0, 1);
     max-width: 1440px;
+    margin: 0 auto; /* <-- Garante que o footer inteiro centralize se a página for maior */
 }
 
 .footer-title {
