@@ -1,19 +1,45 @@
-*{
-    margin: 0px 0px 0px 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .navbar {
-	padding: 20px 50px;
-  }
-  
-  .navbar-brand {
-	font-size: 2em;
-	font-weight: bold;
-  }
-  
-  .nav-link {
-	color: black !important;
-	margin-left: 20px;
-	font-size: 1.2rem;
-	font-weight: 600;
-  }
+    padding: 20px 50px;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: black !important;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* ----------- Responsivo Tablet ----------- */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    .nav-link {
+        margin-left: 15px;
+        font-size: 1rem;
+    }
+}
+
+/* ----------- Responsivo Telemóvel ----------- */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .nav-link {
+        margin-left: 10px;
+        font-size: 0.9rem;
+    }
+}

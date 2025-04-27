@@ -1,21 +1,41 @@
+/* ---------------------- */
+/* BLOCO 1 - ACOMODAÇÃO */
+/* ---------------------- */
+
 body {
-	margin: 0;
-	font-family: Jura;
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	background-color: black !important;
-  }
+    margin: 0;
+    font-family: 'Jura', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black !important;
+}
 
-  .text-align-center {
-	text-align: center !important;
-  }
+.text-align-center {
+    text-align: center !important;
+}
 
-  .page-container {
-	max-width: 1440px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-  }
+.page-container {
+    max-width: 1440px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  
+/* ---------------------- */
+/* RESPONSIVO */
+/* ---------------------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .page-container {
+        padding: 0 20px;
+    }
+}
+
+/* Telemóvel */
+@media (max-width: 576px) {
+    .page-container {
+        padding: 0 15px;
+    }
+}

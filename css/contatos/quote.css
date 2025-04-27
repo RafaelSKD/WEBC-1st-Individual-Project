@@ -1,26 +1,57 @@
+/* ---------------------- */
+/* BLOCKQUOTE - CITAÇÃO */
+/* ---------------------- */
+
 .blockquote {
-	background: none;
-	padding: 20px;
-	margin-bottom: 0;
-  }
-  
-  .blockquote-footer {
-	color: #FFF !important;
-	font-family: Jura !important;
-	font-size: 20px !important;
-	font-style: normal !important;
-	font-weight: 700 !important;
-	line-height: 118.418% !important;
-	margin-top: 10px !important;
-  }
-  
-  .text-right {
-	text-align: right;
-	color: #FFF;
-	font-family: Jura !important;
-	font-size: 25px !important;
-	font-style: normal !important;
-	font-weight: 700 !important;
-	line-height: 118.418% !important; 
-	
-  }
+    background: none;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.blockquote-footer {
+    color: #FFF;
+    font-family: 'Jura', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.text-right {
+    text-align: right;
+    color: #FFF;
+    font-family: 'Jura', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* ---------------------- */
+/* RESPONSIVO BLOCKQUOTE */
+/* ---------------------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .text-right {
+        text-align: center;
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .blockquote-footer {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+/* Telemóvel */
+@media (max-width: 576px) {
+    .text-right {
+        text-align: center;
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .blockquote-footer {
+        text-align: center;
+        font-size: 16px;
+    }
+}

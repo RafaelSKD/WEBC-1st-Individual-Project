@@ -1,69 +1,128 @@
-*{
-    margin: 0px 0px 0px 0px;
-	.navbar-nav {
-	margin-right: 102px;
-	margin-top: 72px;
-  }
+/* ---------------------- */
+/* NAVBAR - ACOMODAÇÃO */
+/* ---------------------- */
 
-  .navbar-nav {
-	margin-right: 102px;
-	margin-top: 72px;
-  }
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  
-}.navbar-nav .nav-link {
+/* Navbar Links */
+.navbar-nav {
+    margin-right: 102px;
+    margin-top: 72px;
+}
+
+.navbar-nav .nav-link {
     font-size: 25px;
     font-weight: bolder;
     color: rgba(0, 0, 0, 1);
     font-family: "Josefin Slab", serif;
-  }
-  .navbar-brand {
+}
+
+.navbar-brand {
     font-size: 28px;
     font-weight: bold;
     font-family: "Josefin Slab", serif;
-  }
+}
 
-.colnav{
+/* Coluna Navegação */
+.colnav {
     top: 5%;
     position: absolute;
     display: flex;
-    justify-content:end;
+    justify-content: end;
     font-family: "Jura", sans-serif;
     font-optical-sizing: auto;
     font-size: 25px;
-    font-weight: bold; 
-	margin: 0 auto;
+    font-weight: bold;
+    margin: 0 auto;
 }
-#paragrafo{
-    padding-left:4%;
+
+#paragrafo {
+    padding-left: 4%;
 }
-.title-office{
+
+/* Título Principal */
+.title-office {
     position: absolute;
     background-color: rgba(11, 17, 17, 0.8);
-    right: 0%;
+    right: 0;
     top: 40%;
     color: white;
     font-size: 80px;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     font-family: "Josefin Slab", serif;
     font-optical-sizing: auto;
     font-style: normal;
-	text-align: center;
+    text-align: center;
+    padding: 10px;
 }
 
-#home-button{
-  position: absolute;
-  display: flex;
-  left: 1%;
-  top: 2%;
-  z-index: 1;
-}
-
+/* Botão Home */
 #home-button {
-	position: absolute;
-	top: 72px; /* ajusta para cima/baixo */
-	left: 102px; /* ajusta para esquerda/direita */
-	width: 59px;
-	height: 70px;
-  }
+    position: absolute;
+    top: 72px;
+    left: 102px;
+    width: 59px;
+    height: 70px;
+    display: flex;
+    z-index: 1;
+}
+
+/* ---------------------- */
+/* RESPONSIVO */
+/* ---------------------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .navbar-nav {
+        margin-right: 30px;
+        margin-top: 40px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 20px;
+    }
+
+    .title-office {
+        font-size: 50px;
+        top: 35%;
+        padding: 10px;
+    }
+
+    #home-button {
+        top: 50px;
+        left: 30px;
+        width: 50px;
+        height: 60px;
+    }
+}
+
+/* Telemóvel */
+@media (max-width: 576px) {
+    .navbar-nav {
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 18px;
+    }
+
+    .title-office {
+        font-size: 35px;
+        top: 30%;
+        padding: 10px;
+    }
+
+    #home-button {
+        top: 30px;
+        left: 20px;
+        width: 45px;
+        height: 55px;
+    }
+}

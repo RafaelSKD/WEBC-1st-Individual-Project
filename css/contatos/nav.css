@@ -1,38 +1,98 @@
-.navbar-nav {
-	margin-right: 102px;
-	margin-top: 72px;
-  }
-
-  img.logo-home {
-    margin-left: 50px; /* Move para a direita */
-    margin-top: 30px;  /* Move para baixo */
-}
+/* ---------------------- */
+/* NAVBAR CONTATOS */
+/* ---------------------- */
 
 .navbar {
-	padding: 20px 50px;
-	color: #FFF;
-	font-family: "Josefin Slab";
-	font-size: 25px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 100.1%; /* 25.025px */
-	text-transform: uppercase;
-  }
-  
-  .navbar-brand {
-	font-size: 2em;
-	font-weight: bold;
-  }
-  
-  .nav-link {
-	color: white !important;
-	margin-left: 20px;
-  }
-  
-  .nav-link:hover {
-	color: rgba(255, 255, 255, 0.8) !important;
-  }
+    padding: 20px 50px;
+    color: #FFF;
+    font-family: "Josefin Slab", serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100.1%;
+    text-transform: uppercase;
+}
 
-  .navbar-brand img {
-	margin-left: 60px; /* ou 30px, conforme precisares */
-  }
+.navbar-nav {
+    margin-right: 102px;
+    margin-top: 72px;
+}
+
+img.logo-home {
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 59px;
+    height: 70px;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    margin-left: 60px;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 20px;
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* ---------------------- */
+/* RESPONSIVO NAVBAR */
+/* ---------------------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 15px 30px;
+        font-size: 22px;
+    }
+
+    .navbar-nav {
+        margin-right: 50px;
+        margin-top: 40px;
+    }
+
+    img.logo-home {
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 50px;
+        height: 60px;
+    }
+
+    .nav-link {
+        margin-left: 15px;
+        font-size: 1rem;
+    }
+}
+
+/* Telemóvel */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .navbar-nav {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    img.logo-home {
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 45px;
+        height: 55px;
+    }
+
+    .nav-link {
+        margin-left: 10px;
+        font-size: 0.9rem;
+    }
+}

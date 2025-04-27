@@ -1,4 +1,4 @@
-.bloco5{
+.bloco5 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -6,6 +6,7 @@
     height: 530px;
     background-color: black;
 }
+
 .imagem-blog {
     display: flex;
     justify-content: center;
@@ -14,71 +15,78 @@
     width: 100%;
     height: 530px;
     background-image: url(../../img/blog.png);
-    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
-#texto-blog{
+
+#texto-blog {
     text-decoration: none;
     border: solid rgba(0, 0, 0, 1) 3px;
     background-color: black;
-    border-radius:35px;
+    border-radius: 35px;
+    width: 309px;
+    height: 77px;
+    color: #FFF;
+    font-family: "Jura", sans-serif;
     font-size: 25px;
-	width: 309px;
-	height: 77px;
-	color: #FFF;
-	font-family: "Jura", sans-serif;
-	font-size: 25px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 118.418%;
-	display: flex;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 118.418%;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-#arrow-position{
+
+#arrow-position {
     position: absolute;
     bottom: 20px;
     right: 15px;
 }
+
+/* ----------- Responsivo Tablet ----------- */
 @media (max-width: 992px) {
-    #imagem-blog {
-      left: 50%;
-      top: 220px;
-      transform: translateX(-50%);
-      font-size: 20px;
-      padding: 1% 6%;
-    }
-    #arrow-position {
-      width: 40px;
-      bottom: 15px;
-      right: 10px;
-    }
     .imagem-blog {
-      height: 450px;
-      background-size: cover;
+        height: 450px;
+        background-size: cover;
     }
+
     .bloco5 {
-      height: 450px;
+        height: 450px;
     }
-  }
-  @media (max-width: 576px) {
-    #imagem-blog {
-      left: 50%;
-      top: 180px;
-      transform: translateX(-50%);
-      font-size: 18px;
-      padding: 2% 5%;
+
+    #texto-blog {
+        font-size: 20px;
+        width: 250px;
+        height: 65px;
     }
+
     #arrow-position {
-      width: 30px;
-      bottom: 10px;
-      right: 5px;
+        width: 40px;
+        right: 10px;
+        bottom: 15px;
     }
+}
+
+/* ----------- Responsivo Telemóvel ----------- */
+@media (max-width: 576px) {
     .imagem-blog {
-      height: 300px;
+        height: 300px;
     }
+
     .bloco5 {
-      height: 300px;
+        height: 300px;
     }
-  }
+
+    #texto-blog {
+        font-size: 18px;
+        width: 200px;
+        height: 55px;
+    }
+
+    #arrow-position {
+        width: 30px;
+        right: 5px;
+        bottom: 10px;
+    }
+}

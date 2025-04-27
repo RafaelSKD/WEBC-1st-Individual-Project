@@ -1,12 +1,32 @@
+/* ---------------------- */
+/* IMAGEM FUNDO - BLOCO 1 ACOMODAÇÃO */
+/* ---------------------- */
 
-.imagem-fundo{
+.imagem-fundo {
     position: relative;
     width: 100%;
     height: 630px;
     background-image: url(../../img/acomodacaofundo.png);
     background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	margin: 0 auto;
-	
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+/* ---------------------- */
+/* RESPONSIVO */
+/* ---------------------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .imagem-fundo {
+        height: 450px;
+    }
+}
+
+/* Telemóvel */
+@media (max-width: 576px) {
+    .imagem-fundo {
+        height: 300px;
+    }
 }
