@@ -51,5 +51,13 @@ All images and design assets were extracted from the Figma file and included in 
 
 ---
 
-## 📂 Folder Structure
+## 📌 Notes
 
+This project was a great introduction to converting real UI/UX designs into functional code, reinforcing the importance of layout precision, responsive design, and clean, maintainable code. Although JavaScript was optional, I chose to add interactive elements to go beyond the basic requirements.
+
+---
+
+## 📬 Contact
+
+Created by **Rafael da Costa**  
+Feel free to connect or provide feedback!
